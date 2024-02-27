@@ -15,7 +15,6 @@ extension String {
 
 func output(str: String) {
     NSLog(str)
-    // NSLog("This never gets called")
 }
 
 class Spass {
@@ -25,7 +24,7 @@ class Spass {
     let endOfTransmission = "\u{0004}"  // control-D, used to signal end of transmission
     
     private func onStdout(_ stdout: FileHandle) {
-        NSLog("doesn't seem like this is ever getting called")
+        NSLog("We are inside onStdout!")
         if (!stdoutActive) { return }
         let data = stdout.availableData
         guard (data.count > 0) else {
