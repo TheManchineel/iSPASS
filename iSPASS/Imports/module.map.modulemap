@@ -1,0 +1,9 @@
+module SPASS {
+    header "SPASS.h"
+    export *
+}
+
+module SetOutputStream {
+    header "SetOutputStream.h"
+    export *
+}
